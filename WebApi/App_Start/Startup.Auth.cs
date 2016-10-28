@@ -38,7 +38,7 @@ namespace WebApi
                 TokenEndpointPath = new PathString("/Token"),
                 Provider = new ApplicationOAuthProvider(PublicClientId),
                 AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(2),
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(4),
                 // In production mode set AllowInsecureHttp = false
                 AllowInsecureHttp = true
             };
